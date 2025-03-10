@@ -87,7 +87,7 @@ span {
     font-weight: 700;
 }
 
-.rate_nums > span:active, #submit:hover, .chosen {
+#submit:hover, .chosen {
     background-color: white;
     color: var(--DarkBlue);
     font-weight: 700;
