@@ -1,0 +1,139 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    font-size: 15px;
+    font-family: "Overpass";
+    line-height: 1.5;
+}
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--VeryDarkBlue);
+}
+
+main {
+    margin-top: 10vh;
+    margin-bottom: 3lh;
+}
+
+.rating_state, .thank_you_state {
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    background: radial-gradient(circle at top, var(--DarkBlue), var(--VeryDarkBlue));
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.rating_state {
+    position: absolute;
+    visibility: visible;
+}
+
+p {
+    font-weight: 200;
+    color: var(--LightGrey);
+}
+
+h1 {
+    font-weight: 700;
+}
+
+#submit {
+    background-color: var(--Orange);
+    height: 2lh;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.rate_nums {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+span {
+    display: flex;
+    background-color: var(--DarkBlue);
+    color: var(--LightGrey);
+    height: 3rem;
+    width: 3rem;
+    align-items: center;  
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.rate_nums > span:hover {
+    cursor: pointer;
+    background-color: var(--Orange);
+    color: var(--DarkBlue);
+    font-weight: 700;
+}
+
+.rate_nums > span:active, #submit:hover, .chosen {
+    background-color: white;
+    color: var(--DarkBlue);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+.rating_state > img {
+    height: 1rem;
+    width: 1rem;
+}
+
+.thank_you_state {
+    visibility: hidden;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.thank_you_state > img {
+    width: 50%;
+}
+
+#selected_x_out_of_five {
+    background-color: var(--DarkBlue);
+    color: hsl(25, 93%, 63%);
+    font-weight: 300;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.alert {
+    text-align: center; 
+    color: var(--Orange);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--LightGrey); 
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
