@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/interactive-rating-component-pure-js-A7anxZWaz3)
 - Live Site URL: [Live site](https://drmetr.github.io/Interactive-rating-component-challenge/)
 
 ## My process
